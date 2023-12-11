@@ -8,6 +8,7 @@ const ImageGenerator = () => {
             <div className="header">Ai image <span>generator</span></div>
             <div className="img-loading">
                 <div className="image"><img src={default_Image} alt=""/> </div>
+
             </div>
         </div>
     )

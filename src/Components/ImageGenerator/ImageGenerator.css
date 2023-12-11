@@ -1,0 +1,21 @@
+.ai-image-generator {
+    display: block;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    gap: 30px;
+    margin-left: 30%;
+}
+
+.header {
+    font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.header span{
+    color: #DE1B89;
+    font-weight: 600;
+}
