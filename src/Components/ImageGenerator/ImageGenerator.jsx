@@ -10,6 +10,11 @@ const ImageGenerator = () => {
                 <div className="image"><img src={default_Image} alt=""/> </div>
 
             </div>
+            <div className="search-box">
+                <input type="text" className='search-input' placeholder='Describe What You Want To See'/>
+                <div className="generate-btn">Generator</div>
+
+            </div>
         </div>
     )
 }
