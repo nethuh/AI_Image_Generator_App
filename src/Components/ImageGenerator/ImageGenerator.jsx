@@ -18,11 +18,19 @@ const ImageGenerator = () => {
                 headers:{
                     "Content-Type":"application/json",
                     Authorization:
-                    "Bearer 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"
+                    "Bearer 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",
+                    "User-Agent":"Chrome",
 
-                }
+                },
+                body:JSON.stringify({
+                    prompt:`${inputRef.current.value}`,
+                    n:1,
+                    size:"512x512",
+                }),
             }
-        )
+        );
+        let data = await response.json();
+        console.log(data);
     }
 
     return (
@@ -34,7 +42,7 @@ const ImageGenerator = () => {
             </div>
             <div className="search-box">
                 <input type="text" ref={inputRef} className='search-input' placeholder='Describe What You Want To See'/>
-                <div className="generate-btn">Generator</div>
+                <div className="generate-btn" onClick={()=>{imageGenerator()}}>Generator</div>
 
             </div>
         </div>
